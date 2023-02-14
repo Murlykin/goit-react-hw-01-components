@@ -1,54 +1,56 @@
-/* .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid #f0f1f0;
-    background-color: #f5faf7;
-    margin-top: 20px;
-}
-.description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-}
+import styled from '@emotion/styled';
 
-.avatar {
+export const ProfileName = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #f0f1f0;
+  background-color: #f5faf7;
+  margin-top: 20px;
+`;
+
+export const Descript = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+`;
+
+export const Avatar = styled.img`
+
     display: flex;
     max-width: 50%;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+`;
 
-}
-
-.name {
+export const Name = styled.p`
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
     font-size: 40px;
     color: dimgray;
     margin: 0;
-}
+`;
 
-.tag,
-.location {
+export const Taglocation = styled.p`
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.35);
     margin: 0;
-}
+`;
 
-.stats {
+
+export const Stats = styled.ul`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.item {
+`; 
+export const Item = styled.li`
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -60,8 +62,7 @@
     font-size: 23px;
     text-align: center;
     color: rgba(0, 0, 0, 0.35);
-}
-
-.quantity {
+`;
+export const LabelQuantity = styled.span`
     color: dimgray;
-} */
+`; 

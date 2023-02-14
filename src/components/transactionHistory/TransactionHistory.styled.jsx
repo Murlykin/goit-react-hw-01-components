@@ -1,28 +1,27 @@
-/* .transactionHistory {
+import styled from '@emotion/styled';
+
+export const TransactionHistor = styled.table`
     margin: 20px auto;
     border-radius: 4px;
     border: 1px solid #f0f1f0;
-}
+    `;
 
-.transactionProperty {
+export const TransactionProperty = styled.thead`
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
     color: dimgray;
     background-color: #f5faf7;
-}
+`;
 
-.transactionType,
-.transactionAmount,
-.transactionCurrency {
+export const TypeAmoundCurrency = styled.th`
     border-right: 1px solid f5faf7;
     border-bottom: 1px solid f5faf7;
 }
+`;
 
-.dataType,
-.dataAmount,
-.dataCurrency {
+export const DataTypeAmoundCurrency = styled.tr`
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
     font-size: 20px;
@@ -31,14 +30,14 @@
     background-color: #f0eeee;
     border-bottom: 1px solid f5faf7;
     border-right: 1px solid f5faf7;
-    padding: 10px 50px;
-}
+    // padding: 10px 50px;
+`;
 
-.dataType {
+export const DataType = styled.td`
     text-transform: capitalize;
-}
+    padding: 10px 50px;
+`;
 
-.transactionCurrency,
-.dataCurrency {
-    border-right: 0;
-} */
+export const AmoundCurrency = styled.td`
+    padding: 10px 50px;
+`;
